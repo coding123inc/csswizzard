@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Documentation - DataSet | CSSWizzard</title>
+      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
+      <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+      <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/all.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+   </head>
+   <body>
+      <div data-b="12" class="noDisplay allHeight sec fixed white" id="mobNav">
+         <div class="allHeight complete relative" id="navMainMobile">
+            <h2 id="closeNav" class="pointer fas fa-times white"></h2>
+            <div class="center t-center">
+               <p><a class="white noAnimDefault" href="https://csswizzard.cf/">Home</a></p>
+               <p><a class="white noAnimDefault bold">Documentation</a></p>
+            </div>
+         </div>
+      </div>
+      <header class="sec">
+         <table class="complete">
+            <tr>
+               <th scope="col" class="mid t-left">
+                  <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
+               </th>
+               <td class="mid t-right">
+                  <nav>
+                     <a class="navLink t-grey noAnimDefault" href="https://csswizzard.cf/">Home</a>
+                     <a class="navLink t-grey noAnimDefault bold">Documentation</a>
+                     <a class="fas fa-bars noAnimDefault" id="openNav"></a>
+                  </nav>
+               </td>
+            </tr>
+         </table>
+      </header>
+      <div class="container">
+         <h1>Data-*</h1>
+         <p data-scale="subtitle">You can modify some HTML tags with the data- attribute.</p>
+         <p data-scale="title">Body data-set</p>
+         <p data-scale="subtitle">In the HTML body tag, the data-* is allowed and you can modify it with the following syntax:</p>
+         <ul>
+            <p><strong>Overflow</strong></p>
+            <li>
+               <p><b>data-scrollH</b> - Horizontal Overflow of the body</p>
+               <ol>
+                  <li>
+                     <p><b>data-scrollH="no"</b> OR  <b>data-scrollH="hidden"</b></p>
+                     <p>Prevent body horizontal scrolling</p>
+                  </li>
+                  <li>
+                     <p><b>data-scrollH="auto"</b></p>
+                     <p>Hide & Show automatic the scroll bar</p>
+                  </li>
+                  <li>
+                     <p><b>data-scrollH="default"</b></p>
+                     <p>Show horizontal scroll bar</p>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <p><b>data-scrollV</b> - Vertical Overflow of the body</p>
+               <ol>
+                  <li>
+                     <p><b>data-scrollV="no"</b> OR  <b>data-scrollV="hidden"</b></p>
+                     <p>Prevent body vertical scrolling</p>
+                  </li>
+                  <li>
+                     <p><b>data-scrollV="auto"</b></p>
+                     <p>Hide & Show automatic the scroll bar</p>
+                  </li>
+                  <li>
+                     <p><b>data-scrollV="default"</b></p>
+                     <p>Show vertical scroll bar</p>
+                  </li>
+               </ol>
+            </li>
+            <li>
+               <p><b>data-scroll</b> - Vertical & Horizontal Overflow of the body</p>
+               <ol>
+                  <li>
+                     <p><b>data-scroll="no"</b></p>
+                     <p>Prevent body horizontal & vertical scrolling</p>
+                  </li>
+               </ol>
+            </li>
+         </ul>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">Areas data-scale</p>
+         <p data-scale="subtitle">With data-scale, the area width can be modified. Also it can be used to create titles & subtitles</p>
+         <div class="sec" data-b="f6">
+            <p data-scale="title">This is a title</p>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">p data-scale=</span><span class="t-blue">&#x22;title&#x22;&#x3E;</span>This is a title<span class="t-blue">&#x3C;/</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <p data-scale="subtitle">This is a subtitle</p>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">p data-scale=</span><span class="t-blue">&#x22;subtitle&#x22;&#x3E;</span>This is a title<span class="t-blue">&#x3C;/</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <p><input class="boxCont" data-scale="large" data-b="f" /></p>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">input data-scale=</span><span class="t-blue">&#x22;large&#x22;&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <p><input class="boxCont" data-scale="middle" data-b="f" /></p>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">input data-scale=</span><span class="t-blue">&#x22;middle&#x22;&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <p><input class="boxCont" data-scale="tiny" data-b="f" /></p>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">input data-scale=</span><span class="t-blue">&#x22;tiny&#x22;&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <textarea class="boxCont" data-scale="large" data-b="f"></textarea>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">textarea data-scale=</span><span class="t-blue">&#x22;large&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">textarea</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <textarea class="boxCont" data-scale="middle" data-b="f"></textarea>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">textarea data-scale=</span><span class="t-blue">&#x22;middle&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">textarea</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <textarea class="boxCont" data-scale="tiny" data-b="f"></textarea>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">textarea data-scale=</span><span class="t-blue">&#x22;tiny&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">textarea</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <select class="boxCont" data-scale="large" data-b="f"></select>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">select data-scale=</span><span class="t-blue">&#x22;large&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">select</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <select class="boxCont" data-scale="middle" data-b="f"></select>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">select data-scale=</span><span class="t-blue">&#x22;middle&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">select</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <select class="boxCont" data-scale="tiny" data-b="f"></select>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">select data-scale=</span><span class="t-blue">&#x22;tiny&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">select</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">Textarea data-resize</p>
+         <p data-scale="subtitle">With the data-resize, the textarea element can have a horizontal, vertical or no resize</p>
+         <div class="sec" data-b="f6">
+            <textarea class="boxCont" data-resize="no" data-b="f"></textarea>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">textarea data-resize=</span><span class="t-blue">&#x22;no&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">textarea</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <textarea class="boxCont" data-resize="horizontal" data-b="f"></textarea>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">textarea data-resize=</span><span class="t-blue">&#x22;horizontal&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">textarea</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <textarea class="boxCont" data-resize="vertical" data-b="f"></textarea>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">textarea data-resize=</span><span class="t-blue">&#x22;vertical&#x22;&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">textarea</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">data-bord</p>
+         <p data-scale="subtitle">With data-bord, the element will have a custom border. Any element can have the data-bord attribute</p>
+         <p>Allowed values:</p>
+         <ul>
+            <li>
+               <p>blue</p>
+            </li>
+            <li>
+               <p>red</p>
+            </li>
+            <li>
+               <p>green</p>
+            </li>
+            <li>
+               <p>orange</p>
+            </li>
+            <li>
+               <p>purple</p>
+            </li>
+         </ul>
+         <div class="sec" data-b="f6">
+            <div class="container" data-bord="purple" data-b="f">Purple border</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;purple&#x22;&#x3E;</span>Purple border<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-bord="orange" data-b="f">Orange border</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;orange&#x22;&#x3E;</span>Orange border<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-bord="green" data-b="f">Green border</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;green&#x22;&#x3E;</span>Green border<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-bord="red" data-b="f">Red border</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;red&#x22;&#x3E;</span>Red border<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-bord="blue" data-b="f">Blue border</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;blue&#x22;&#x3E;</span>Blue border<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">data-align</p>
+         <p data-scale="subtitle">The data-align attribute modifies the text align of element. Any element can have the data-align attribute</p>
+         <p>Allowed values:</p>
+         <ul>
+            <li>
+               <p>right</p>
+            </li>
+            <li>
+               <p>left</p>
+            </li>
+            <li>
+               <p>center</p>
+            </li>
+         </ul>
+         <div class="sec" data-b="f6">
+            <div class="container" data-align="center" data-b="f">Centered text</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-align=</span><span class="t-blue">&#x22;center&#x22;&#x3E;</span>Centered Text<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-align="left" data-b="f">Text align in left side</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-align=</span><span class="t-blue">&#x22;left&#x22;&#x3E;</span>Text align in left side<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-align="right" data-b="f">Text align in right side</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-align=</span><span class="t-blue">&#x22;right&#x22;&#x3E;</span>Text align in right side<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">data-b</p>
+         <p data-scale="subtitle">The data-b attribute modifies the background color of element. Any element can have the data-b attribute</p>
+         <p>Allowed values:</p>
+         <ul>
+            <li>
+               <p>12</p>
+            </li>
+            <li>
+               <p>11</p>
+            </li>
+            <li>
+               <p>10</p>
+            </li>
+            <li>
+                <p>0</p>
+             </li>
+             <li>
+                <p>c2</p>
+             </li>
+             <li>
+                <p>c1</p>
+             </li>
+             <li>
+                <p>c</p>
+             </li>
+             <li>
+                <p>f1</p>
+             </li>
+             <li>
+                <p>f2</p>
+             </li>
+             <li>
+                <p>f3</p>
+             </li>
+             <li>
+                <p>f4</p>
+             </li>
+             <li>
+                <p>f5</p>
+             </li>
+             <li>
+                <p>f6</p>
+             </li>
+             <li>
+                <p>f7</p>
+             </li>
+             <li>
+                <p>f8</p>
+             </li>
+             <li>
+                <p>f9</p>
+             </li>
+             <li>
+                <p>f</p>
+             </li>
+         </ul>
+         <p><b>Quick Reminder</b></p>
+         <p>The value of <b>data-b</b> will be converted to HEX: #(Value)</p>
+         <p>If the value is <b>c</b>, the background of element will be <b>#ccc</b></p>
+         <p>If the value is <b>f2</b>, the background of element will be <b>#f2f2f2</b></p>
+         <p class="n-sel"><br/></p>
+         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/sec"><i class="fas fa-angle-right"></i><span class="right">Next: Sections & Containers</span></a> </p>
+         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/"><i class="fas fa-angle-left"></i><span class="right">Previous: Introduction</span></a> </p>
+      </div>
+      <footer class="sec">
+         <p><img class="logo cstm-img" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /><span class="inline right bold">CSSWizzard</span></p>
+         <p id="year"></p>
+         <p>Beautiful template design, CSS Library for modern website design.</p>
+      </footer>
+      <script>
+         year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123.";
+         closeNav.addEventListener("click", () => {
+              navMainMobile.style.opacity = "0";
+              setTimeout(() => {
+                  mobNav.style.width = "1%"
+                  setTimeout(() => {
+                      mobNav.style.opacity = "0"
+                  }, 300);
+              }, 300);
+         });
+         openNav.addEventListener("click", () => {
+          mobNav.style.display = "block";
+          mobNav.style.opacity = "1";
+              setTimeout(() => {
+                  navMainMobile.style.opacity = "1";
+                  setTimeout(() => {
+                      mobNav.style.width = "100%"
+                  }, 300);
+              }, 20);
+         });
+      </script>
+   </body>
+</html>

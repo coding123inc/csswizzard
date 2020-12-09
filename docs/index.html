@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Introduction | CSSWizzard</title>
+    <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
+    <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+    <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <div data-b="12" class="noDisplay allHeight sec fixed white" id="mobNav">
+        <div class="allHeight complete relative" id="navMainMobile">
+            <h2 id="closeNav" class="pointer fas fa-times white"></h2>
+            <div class="center t-center">
+                <p><a class="white noAnimDefault" href="https://csswizzard.cf/">Home</a></p>
+                <p><a class="white noAnimDefault bold">Documentation</a></p>
+            </div>
+        </div>
+    </div>
+    <header class="sec">
+        <table class="complete">
+            <tr>
+                <th scope="col" class="mid t-left">
+                    <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
+                </th>
+                <td class="mid t-right">
+                    <nav>
+                        <a class="navLink t-grey noAnimDefault" href="https://csswizzard.cf/">Home</a>
+                        <a class="navLink t-grey noAnimDefault bold">Documentation</a>
+                        <a class="fas fa-bars noAnimDefault" id="openNav"></a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <div class="container">
+        <h1>Introduction</h1>
+        <p data-scale="subtitle">Welcome to the CSSWizzard Documentation. With CSSWizzard you can create Beautiful and Responsive websites</p>
+        <br/><hr /><br/>
+        <p data-scale="title">Quick start</p>
+        <p data-scale="subtitle">Installation</p>
+        <p>You can download the zip directly <a href="https://csswizzard.cf/download">here</a></p>
+       <p>Or the you can include the library from our cloud.</p>
+       <p><div class="codeBox">
+        <span class="t-blue">&#x3C;</span><span class="t-red">link</span> <span class="t-red">rel=</span><span class="t-blue">&#x22;stylesheet&#x22;</span> <span class="t-red">type=</span><span class="t-blue">&#x22;text/css&#x22;</span> <span class="t-red">href=</span><span class="t-blue">&#x22;https://csswizzard.cf/code/min.css&#x22; </span><span class="t-red">/&#x3E;</span>
+        </div></p>
+        <p class="n-sel mobileDisplay"><br/></p><p class="n-sel"><br/></p>
+       <p class="n-sel mobileDisplay"><br/></p>
+       <a class="t-right noUnderline" href="https://csswizzard.cf/docs/data-set"><i class="fas fa-angle-right"></i><span class="right">Next: Data-*</span></a>
+    </div>
+     <footer class="sec">
+        <p><img class="logo cstm-img" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /><span class="inline right bold">CSSWizzard</span></p>
+        <p id="year"></p>
+        <p>Beautiful template design, CSS Library for modern website design.</p>
+   </footer>
+   <script>
+       year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123.";
+       closeNav.addEventListener("click", () => {
+            navMainMobile.style.opacity = "0";
+            setTimeout(() => {
+                mobNav.style.width = "1%"
+                setTimeout(() => {
+                    mobNav.style.opacity = "0"
+                }, 300);
+            }, 300);
+       });
+       openNav.addEventListener("click", () => {
+        mobNav.style.display = "block";
+        mobNav.style.opacity = "1";
+            setTimeout(() => {
+                navMainMobile.style.opacity = "1";
+                setTimeout(() => {
+                    mobNav.style.width = "100%"
+                }, 300);
+            }, 20);
+       });
+   </script>
+</body>
+</html>

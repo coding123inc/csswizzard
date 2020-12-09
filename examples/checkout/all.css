@@ -1,0 +1,17 @@
+.center-align {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+.right {
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:980px) {
+    .center-align .mid {
+        width: 70%;
+    }
+}

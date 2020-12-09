@@ -1,0 +1,21 @@
+.imgHeader {
+    background-image: url("https://cdn.pixabay.com/photo/2020/12/02/00/57/mountain-5795883_960_720.jpg");
+}
+
+.mask {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 1;
+}
+
+.front {
+    z-index: 2;
+}
+
+.noShadow {
+    box-shadow: none !important;
+}
+
+#headerMain {
+    z-index: 10;
+}

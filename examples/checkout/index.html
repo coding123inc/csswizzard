@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Example - CSSWizzard</title>
+    <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
+    <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="all.css" />
+</head>
+<body data-b="f6">
+    <div class="center complete t-center">
+        <div id="loadIcon">
+            <p data-scale="title" class="t-blue fas fa-circle-notch fa-spin"></p>
+        </div>
+        <div id="checkoutMain" class="noDisplay">
+            <div class="complete t-center">
+                <div class="complete t-center">
+                    <div class="center-align">
+                        <div class="mid t-left card cardBody" data-b="f">
+                            <div class="container">
+                                <h1>Checkout</h1>
+                                <ul>
+                                    <li>
+                                        <p><b>Example Item</b> ($5.00)</p>
+                                    </li>
+                                </ul>
+                                <form onsubmit="return false" class="bottom-min">
+                                    <p><input class="boxCont" name="firstname" id="firstname" placeholder="First Name" required /></p>
+                                    <p><input class="boxCont" name="lastname" id="lastname" placeholder="Last Name" required /></p>
+                                    <p><input class="boxCont" type="email" name="email" id="email" placeholder="Email" required /></p>
+                                    <p>Payment Method</p>
+                                    <p><input checked type="radio" id="choosePaypal" name="paymentMethod" value="PayPal" /> PayPal</p>
+                                    <p><input type="radio" id="choosePaypal" name="paymentMethod" value="BankTransfer" /> Bank Transfer</p>
+                                    <p><button class="btn-blue"><i class="fas fa-lock"></i><span class="right">Checkout</span></button></p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart Example - CSSWizzard</title>
+    <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
+    <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="all.css" />
+</head>
+<body>
+    <header class="sec">
+        <table class="complete">
+            <tr>
+                <th scope="col" class="mid t-left">
+                    <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
+                </th>
+                <td class="mid t-right">
+                    <nav>
+                        <a class="subtitle t-grey noAnimDefault bold fa fa-shopping-cart"></a>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <div class="container">
+        <div class="table">
+            <div class="w65compOnMobile cardContainer">
+                <div class="card cardBody">
+                    <h1>Your Cart</h1>
+                    <div class="bottom-min sec">
+                        <table class="complete">
+                            <tr class="sec">
+                                <th scope="col" class="l1o3 t-left">
+                                    Example Item
+                                </th>
+                                <td class="l1o3 t-center">
+                                    $4.99
+                                </td>
+                                <td class="l1o3 t-right">
+                                    <i class="pointer fas fa-trash-alt t-red"></i>
+                                </td>
+                            </tr>
+                            <tr class="sec">
+                                <th scope="col" class="l1o3 t-left">
+                                    Example Item
+                                </th>
+                                <td class="l1o3 t-center">
+                                    $4.99
+                                </td>
+                                <td class="l1o3 t-right">
+                                    <i class="pointer fas fa-trash-alt t-red"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <p><button class="btn-red"><i class="fas fa-trash-alt"></i><span class="right">Empty shopping cart</span></button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cardContainer w35compOnMobile">
+                <div class="card cardBody">
+                    <p data-scale="subtitle" class="bold">Total: $9.98</p>
+                    <p><button class="btn-green"><i class="fas fa-lock"></i><span class="right">Proceed</span></button></p>
+                    <span class="t-grey">All your information is encrypted.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="table">
+            <div class="cardContainer">
+                <div class="card cardBody">
+                    <p><img height="100" class="noBorder card" alt="Test" src="https://cdn.pixabay.com/photo/2012/04/13/17/00/camera-32871_960_720.png" /></p>
+                    <h3 class="bold">Camera</h3>
+                    <p>Some description here</p>
+                    <p><button class="btn-blue">Add to cart</button></p>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div class="card cardBody">
+                    <p><img height="100" class="noBorder card" alt="Test" src="https://cdn.pixabay.com/photo/2012/04/13/17/00/camera-32871_960_720.png" /></p>
+                    <h3 class="bold">Camera</h3>
+                    <p>Some description here</p>
+                    <p><button class="btn-blue">Add to cart</button></p>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div class="card cardBody">
+                    <p><img height="100" class="noBorder card" alt="Test" src="https://cdn.pixabay.com/photo/2012/04/13/17/00/camera-32871_960_720.png" /></p>
+                    <h3 class="bold">Camera</h3>
+                    <p>Some description here</p>
+                    <p><button class="btn-blue">Add to cart</button></p>
+                </div>
+            </div>
+            <div class="cardContainer">
+                <div class="card cardBody">
+                    <p><img height="100" class="noBorder card" alt="Test" src="https://cdn.pixabay.com/photo/2012/04/13/17/00/camera-32871_960_720.png" /></p>
+                    <h3 class="bold">Camera</h3>
+                    <p>Some description here</p>
+                    <p><button class="btn-blue">Add to cart</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="sec t-center" data-b="f6">
+        <p id="year"></p>
+    </footer>
+    <script>
+        year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123"
+    </script>
+</body>
+</html>

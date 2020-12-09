@@ -1,0 +1,21 @@
+.w35compOnMobile {
+    width: 35%;
+}
+@media screen and (max-width: 980px) {
+     .w35compOnMobile {
+         width: 100%;
+     }
+}
+
+.right {
+    margin-left: 1rem;
+}
+
+.w65compOnMobile {
+    width: 65%;
+}
+@media screen and (max-width: 980px) {
+     .w65compOnMobile {
+         width: 100%;
+     }
+}

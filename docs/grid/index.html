@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Documentation - Grid Containers | CSSWizzard</title>
+      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
+      <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+      <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/all.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+   </head>
+   <body data-scrollH="no">
+      <div data-b="12" class="noDisplay allHeight sec fixed white" id="mobNav">
+         <div class="allHeight complete relative" id="navMainMobile">
+            <h2 id="closeNav" class="pointer fas fa-times white"></h2>
+            <div class="center t-center">
+               <p><a class="white noAnimDefault" href="https://csswizzard.cf/">Home</a></p>
+               <p><a class="white noAnimDefault bold">Documentation</a></p>
+            </div>
+         </div>
+      </div>
+      <header class="sec">
+         <table class="complete">
+            <tr>
+               <th scope="col" class="mid t-left">
+                  <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
+               </th>
+               <td class="mid t-right">
+                  <nav>
+                     <a class="navLink t-grey noAnimDefault" href="https://csswizzard.cf/">Home</a>
+                     <a class="navLink t-grey noAnimDefault bold">Documentation</a>
+                     <a class="fas fa-bars noAnimDefault" id="openNav"></a>
+                  </nav>
+               </td>
+            </tr>
+         </table>
+      </header>
+      <div class="container">
+         <h1>Introducing Grid Containers</h1>
+        <div class="grid" data-b="f">
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+        </div>
+        <br class="n-sel"/>
+        <div class="sec" data-b="f6">
+            <div class="scroll">
+                <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;grid&quot;&#x3E;</span><br/>
+                <span class="t-blue right">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;sec t-center&quot;&#x3E;</span><br/>
+                <span class="right"><span class="right t-blue">&#x3C;</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span>Grid Item<span class="t-blue"><span>&#x3C;/</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span></span><br/>
+                <span class="t-blue right">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span><br/>
+                <span class="t-blue right">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;sec t-center&quot;&#x3E;</span><br/>
+                <span class="right"><span class="right t-blue">&#x3C;</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span>Grid Item<span class="t-blue"><span>&#x3C;/</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span></span><br/>
+                <span class="t-blue right">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span><br/>
+                <span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+            </div>
+        </div>
+        <p class="n-sel"><br/></p>
+        <h2>Grid Row Gap</h2>
+        <p>Use <strong>data-gridRowGap</strong> to define grid row gap</p>
+        <ul>
+            <li>
+                <p><b>large</b> - 70px</p>
+            </li>
+        </ul>
+        <div class="grid white" data-gridRowGap="large" data-b="12">
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+        </div>
+        <ul>
+            <li>
+                <p><b>moderate</b> - 45px</p>
+            </li>
+        </ul>
+        <div class="grid white" data-gridRowGap="moderate" data-b="12">
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+        </div>
+        <ul>
+            <li>
+                <p><b>small</b> - 20px</p>
+            </li>
+        </ul>
+        <div class="grid white" data-gridRowGap="small" data-b="12">
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+        </div>
+        <ul>
+            <li>
+                <p><b>tiny</b> - 5px</p>
+            </li>
+        </ul>
+        <div class="grid white" data-gridRowGap="tiny" data-b="12">
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+            <div class="sec" data-bord="default" data-align="center">Item</div>
+        </div>
+         <p class="n-sel"><br/></p>
+         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/dropdown"><i class="fas fa-angle-right"></i><span class="right">Next: Dropdown Menus</span></a> </p>
+         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/other"><i class="fas fa-angle-left"></i><span class="right">Previous: Additional Classes</span></a> </p>
+      </div>
+      <footer class="sec">
+         <p><img class="logo cstm-img" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /><span class="inline right bold">CSSWizzard</span></p>
+         <p id="year"></p>
+         <p>Beautiful template design, CSS Library for modern website design.</p>
+      </footer>
+      <script>
+         year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123.";
+         closeNav.addEventListener("click", () => {
+              navMainMobile.style.opacity = "0";
+              setTimeout(() => {
+                  mobNav.style.width = "1%"
+                  setTimeout(() => {
+                      mobNav.style.opacity = "0"
+                  }, 300);
+              }, 300);
+         });
+         openNav.addEventListener("click", () => {
+          mobNav.style.display = "block";
+          mobNav.style.opacity = "1";
+              setTimeout(() => {
+                  navMainMobile.style.opacity = "1";
+                  setTimeout(() => {
+                      mobNav.style.width = "100%"
+                  }, 300);
+              }, 20);
+         });
+      </script>
+   </body>
+</html>

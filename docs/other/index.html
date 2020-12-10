@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Documentation - Additional Classes | CSSWizzard</title>
+      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
+      <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+      <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
+      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/all.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+   </head>
+   <body data-scrollH="no">
+      <div data-b="12" class="noDisplay allHeight sec fixed white" id="mobNav">
+         <div class="allHeight complete relative" id="navMainMobile">
+            <h2 id="closeNav" class="pointer fas fa-times white"></h2>
+            <div class="center t-center">
+               <p><a class="white noAnimDefault" href="https://csswizzard.cf/">Home</a></p>
+               <p><a class="white noAnimDefault bold">Documentation</a></p>
+            </div>
+         </div>
+      </div>
+      <header class="sec">
+         <table class="complete">
+            <tr>
+               <th scope="col" class="mid t-left">
+                  <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
+               </th>
+               <td class="mid t-right">
+                  <nav>
+                     <a class="navLink t-grey noAnimDefault" href="https://csswizzard.cf/">Home</a>
+                     <a class="navLink t-grey noAnimDefault bold">Documentation</a>
+                     <a class="fas fa-bars noAnimDefault" id="openNav"></a>
+                  </nav>
+               </td>
+            </tr>
+         </table>
+      </header>
+      <div class="container">
+         <h1>Positioning of Elements</h1>
+        <div class="container">
+            <p>Default</p>
+            <p class="right-min">.right-min</p>
+            <p class="left-min">.left-min</p>
+            <div class="sec">
+                <p class="top-min">.top-min</p>
+            </div>
+            <p class="bottom-min">.bottom-min</p>
+        </div>
+        <h3>Positioning References</h3>
+        <div class="sec white" data-b="12">
+            <span class="t-purple">.right-min</span> <span class="t-orange">{</span><br/>
+                <span class="t-blue right-min">margin-left</span><span class="t-orange">:</span><span class="t-purple">2rem</span><span class="t-orange">;</span><br/>
+            <span class="t-orange">}</span>
+        </div>
+        <div class="sec white" data-b="12">
+            <span class="t-purple">.left-min</span> <span class="t-orange">{</span><br/>
+                <span class="t-blue right-min">margin-left</span><span class="t-orange">:</span><span class="t-purple">-2rem</span><span class="t-orange">;</span><br/>
+            <span class="t-orange">}</span>
+        </div>
+        <div class="sec white" data-b="12">
+            <span class="t-purple">.top-min</span> <span class="t-orange">{</span><br/>
+                <span class="t-blue right-min">margin-top</span><span class="t-orange">:</span><span class="t-purple">-2rem</span><span class="t-orange">;</span><br/>
+            <span class="t-orange">}</span>
+        </div>
+        <div class="sec white" data-b="12">
+            <span class="t-purple">.bottom-min</span> <span class="t-orange">{</span><br/>
+                <span class="t-blue right-min">margin-top</span><span class="t-orange">:</span><span class="t-purple">2rem</span><span class="t-orange">;</span><br/>
+            <span class="t-orange">}</span>
+        </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">Introducing .noUnderline Class</p>
+         <p><a class="noUnderline">This is a link without underline</a></p>
+         <p><a>This is a common link, with underline on hover</a></p>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">Introducing .noAnimDefault Class</p>
+         <p data-scale="subtitle">Set a dark color & no underline to links</p>
+         <p><a class="noAnimDefault">This is a link with the .noAnimDefault class</a></p>
+         <p><a>This is a common link</a></p>
+         <p data-scale="title">Introducing Info Boxes</p>
+         <div class="infoBox" data-boxBord="blue">
+            <p>This is an infoBox</p>
+         </div><br class="n-sel"/>
+         <div class="infoBox" data-boxBord="purple">
+            <p>This is an infoBox</p>
+         </div><br class="n-sel"/>
+         <div class="infoBox" data-boxBord="orange">
+            <p>This is an infoBox</p>
+         </div><br class="n-sel"/>
+         <div class="infoBox" data-boxBord="red">
+            <p>This is an infoBox</p>
+         </div><br class="n-sel"/>
+         <div class="infoBox" data-boxBord="green">
+            <p>This is an infoBox</p>
+         </div><br class="n-sel"/>
+         <div class="infoBox" data-boxBord="pink">
+            <p>This is an infoBox</p>
+         </div><br class="n-sel"/>
+         <div class="sec" data-b="f6">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;infoBox&quot;</span> <span class="t-red">data-boxBord=</span><span class="t-blue">&#x22;red&#x22;&#x3E;</span>InfoBox<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">Introducing &quot;On hover&quot; borders</p>
+         <div class="sec" data-b="f6">
+            <div class="container" data-bord="purple on hover" data-b="f">Hover me</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;purple on hover&#x22;&#x3E;</span>Hover me<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div class="container" data-b="f" data-bord="orange on hover">Hover me</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;orange on hover&#x22;&#x3E;</span>Hover me<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div data-b="f" class="container" data-bord="green on hover">Hover me</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;green on hover&#x22;&#x3E;</span>Hover me<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div data-b="f" class="container" data-bord="red on hover">Hover me</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;red on hover&#x22;&#x3E;</span>Hover me<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div data-b="f" class="container" data-bord="blue on hover">Hover me</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;blue on hover&#x22;&#x3E;</span>Hover me<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <div class="sec" data-b="f6">
+            <div data-b="f" class="container" data-bord="pink on hover">Hover Me</div>
+         </div>
+         <div class="sec white" data-b="12">
+            <span class="t-blue">&#x3C;</span><span class="t-red">div class=</span><span class="t-blue">&quot;container&quot;</span> <span class="t-red">data-bord=</span><span class="t-blue">&#x22;pink on hover&#x22;&#x3E;</span>Hover Me<span class="t-blue">&#x3C;/</span><span class="t-red">div</span><span class="t-blue">&#x3E;</span>
+         </div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">The .title & .subtitle classes</p>
+         <p class="subtitle">If it is needed to set a subtitle without a p or span tag, the .title or .subtitle classes can be used.</p>
+         <div class="title">This is a div container with title class</div>
+         <div class="subtitle">This is a div container with subtitle class</div>
+         <p class="n-sel"><br/></p>
+         <p data-scale="title">The data-shadow attribute</p>
+         <p class="subtitle">A button shadow can be deleted with the data-shadow attribute</p>
+         <p><strong>data-shadow="no"</strong></p>
+         <p><button class="btn-blue" data-shadow="no">No shadow button</button></p>
+         <p><button class="btn-blue">Default button</button></p>
+         <p class="n-sel"><br/></p>
+         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/grid"><i class="fas fa-angle-right"></i><span class="right">Next: Grid Container</span></a> </p>
+         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/bars"><i class="fas fa-angle-left"></i><span class="right">Previous: Progress Bars</span></a> </p>
+      </div>
+      <footer class="sec">
+         <p><img class="logo cstm-img" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /><span class="inline right bold">CSSWizzard</span></p>
+         <p id="year"></p>
+         <p>Beautiful template design, CSS Library for modern website design.</p>
+      </footer>
+      <script>
+         year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123.";
+         closeNav.addEventListener("click", () => {
+              navMainMobile.style.opacity = "0";
+              setTimeout(() => {
+                  mobNav.style.width = "1%"
+                  setTimeout(() => {
+                      mobNav.style.opacity = "0"
+                  }, 300);
+              }, 300);
+         });
+         openNav.addEventListener("click", () => {
+          mobNav.style.display = "block";
+          mobNav.style.opacity = "1";
+              setTimeout(() => {
+                  navMainMobile.style.opacity = "1";
+                  setTimeout(() => {
+                      mobNav.style.width = "100%"
+                  }, 300);
+              }, 20);
+         });
+      </script>
+   </body>
+</html>

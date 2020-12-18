@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Data attributes | CSSWizzard 1.2 Documentation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../src/css/min.css" rel="stylesheet">
+        <link rel="shortcut icon" href="https://csswizzard.cf/etc/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    </head>
+    <body>
+        <header class="sec">
+            <p><img src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" class="logo"></p>
+        </header>
+        <div class="container">
+            <h1>Overflow</h1>
+            <p data-scale="subtitle">Prevent Element Overflow</p>
+            <p>The body tag can have the <strong>data-scroll="no"</strong> to prevent vertical & horizontal scrolling</p>
+            <button class="btn-grey" onclick="hideorshowoverflow()">Click here to try it</button>
+            <p>To prevent HTML Body tag horizontal scrolling, use the <strong>data-scrollH</strong> attribute.</p>
+            <button class="accordion bold">data-scrollH=&quot;no&quot;</button>
+            <div class="panel">
+                <p>Also valid <b>data-scrollH=&quot;hidden&quot;</b></p>
+                <p>Prevent body horizontal scrolling</p>
+            </div>
+            <button class="accordion bold">data-scrollH=&quot;auto&quot;</button>
+            <div class="panel">
+                <p>Activate and deactivate body horizontal scrolling automaticlly</p>
+            </div>
+            <button class="accordion bold">data-scrollH=&quot;default&quot;</button>
+            <div class="panel">
+                <p>Show allways the horizontal scrolling bar</p>
+            </div>
+            <p>To prevent HTML Body tag vertical scrolling, use the <strong>data-scrollV</strong> attribute.</p>
+            <button class="accordion bold">data-scrollV=&quot;no&quot;</button>
+            <div class="panel">
+                <p>Also valid <b>data-scrollV=&quot;hidden&quot;</b></p>
+                <p>Prevent body vertical scrolling</p>
+            </div>
+            <button class="accordion bold">data-scrollV=&quot;auto&quot;</button>
+            <div class="panel">
+                <p>Activate and deactivate body vertical scrolling automaticlly</p>
+            </div>
+            <button class="accordion bold">data-scrollV=&quot;default&quot;</button>
+            <div class="panel">
+                <p>Show allways the vertical scrolling bar</p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Area scale</h2>
+            <p data-scale="subtitle">With the <strong>data-scale</strong> attribute, the area size can be controlled:</p>
+            <p data-scale="subtitle">It works with <span class="t-red">select</span>, <span class="t-red">input</span> and <span class="t-red">textarea</span> tags</p>
+            <p data-scale="subtitle">Also, works with <span class="t-red">p</span> and <span class="t-red">span</span></p>
+            <button class="accordion bold">data-scale=&quot;large&quot;</button>
+            <div class="panel">
+                <p>Textarea properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>95%</b></p>
+                    </li>
+                    <li>
+                        <p>height: <b>300px</b></p>
+                    </li>
+                </ul>
+                <p><textarea data-scale="large" class="boxCont" data-resize="no"></textarea></p>
+                <p>Input properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>95%</b></p>
+                    </li>
+                </ul>
+                <p><input class="boxCont" data-scale="large" /></p>
+                <p>Select properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>95%</b></p>
+                    </li>
+                </ul>
+                <p><select class="boxCont" data-scale="large"><option>Large scale</option></select></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">input data-scale=</span><span class="t-blue">"large"&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-scale=&quot;middle&quot;</button>
+            <div class="panel">
+                <p>Textarea properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>50%</b></p>
+                    </li>
+                    <li>
+                        <p>height: <b>50%</b></p>
+                    </li>
+                </ul>
+                <p><textarea data-scale="middle" class="boxCont" data-resize="no"></textarea></p>
+                <p>Input properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>50%</b></p>
+                    </li>
+                </ul>
+                <p><input class="boxCont" data-scale="middle" /></p>
+                <p>Select properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>50%</b></p>
+                    </li>
+                </ul>
+                <p><select class="boxCont" data-scale="middle"><option>Middle scale</option></select></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">input data-scale=</span><span class="t-blue">"middle"&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-scale=&quot;tiny&quot;</button>
+            <div class="panel">
+                <p>Textarea, Input, Select properties</p>
+                <ul>
+                    <li>
+                        <p>width: <b>35%</b></p>
+                    </li>
+                </ul>
+                <p><textarea data-scale="tiny" class="boxCont" data-resize="no"></textarea></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">input data-scale=</span><span class="t-blue">"tiny"&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-scale=&quot;title&quot;</button>
+            <div class="panel">
+                <p>Only allowed in <span class="t-red">p</span> and <span class="t-red">span</span> tags</p>
+                <p data-scale="title">Hello World</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">p data-scale=</span><span class="t-blue">"title"&gt;</span>Text<span class="t-blue">&lt;/</span><span class="t-red">p</span><span class="t-blue">&gt;</span></p>
+                <p><strong>ALTERNATIVE: </strong> If need to set a title without p or span tag, use the <strong>title</strong> class</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">p class=</span><span class="t-blue">"title"&gt;</span>Text<span class="t-blue">&lt;/</span><span class="t-red">p</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-scale=&quot;subtitle&quot;</button>
+            <div class="panel">
+                <p>Only allowed in <span class="t-red">p</span> and <span class="t-red">span</span> tags</p>
+                <p data-scale="subtitle">Hello World</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">p data-scale=</span><span class="t-blue">"subtitle"&gt;</span>Subtitle<span class="t-blue">&lt;/</span><span class="t-red">p</span><span class="t-blue">&gt;</span></p>
+                <p><strong>ALTERNATIVE: </strong> If need to set a title without p or span tag, use the <strong>subtitle</strong> class</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">p class=</span><span class="t-blue">"subtitle"&gt;</span>Text<span class="t-blue">&lt;/</span><span class="t-red">p</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Textarea resizing</h2>
+            <p data-scale="subtitle">The <strong>data-resize</strong> attribute define a textarea box resizing</p>
+            <button class="accordion bold">data-resize=&quot;no&quot;</button>
+            <div class="panel">
+                <p>Disables vertical & horizontal resizing of area</p>
+                <p><textarea class="boxCont" data-resize="no"></textarea></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">textarea data-resize=</span><span class="t-blue">"no"&gt;</span>Text<span class="t-blue">&lt;/</span><span class="t-red">textarea</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-resize=&quot;vertical&quot;</button>
+            <div class="panel">
+                <p>Enables vertical-only resizing of area</p>
+                <p><textarea class="boxCont" data-resize="vertical"></textarea></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">textarea data-resize=</span><span class="t-blue">"vertical"&gt;</span>Text<span class="t-blue">&lt;/</span><span class="t-red">textarea</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-resize=&quot;horizontal&quot;</button>
+            <div class="panel">
+                <p>Enables horizontal-only resizing of area</p>
+                <p><textarea class="boxCont" data-resize="horizontal"></textarea></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">textarea data-resize=</span><span class="t-blue">"horizontal"&gt;</span>Text<span class="t-blue">&lt;/</span><span class="t-red">textarea</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Element border</h2>
+            <p data-scale="subtitle">The <strong>data-bord</strong> attribute define an element border. This attribute is supported for all html tags</p>
+            <button class="accordion bold">data-bord=&quot;purple&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="purple">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"purple"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;red&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="red">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"red"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;blue&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="blue">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"blue"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;orange&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="orange">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"orange"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;green&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="green">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"green"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;pink&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="pink">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"pink"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;default&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="default">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"default"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;purple on hover&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="purple on hover">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"purple on hover"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;red on hover&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="red on hover">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"red on hover"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;blue on hover&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="blue on hover">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"blue on hover"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;orange on hover&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="orange on hover">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"orange on hover"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;green on hover&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="green on hover">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"green on hover"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-bord=&quot;pink on hover&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-bord="pink on hover">data-bord</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-bord=</span><span class="t-blue">"pink on hover"&gt;</span>data-bord<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Text align</h2>
+            <p data-scale="subtitle">The <strong>data-align</strong> attribute set text align. This attribute is supported in any element</p>
+            <button class="accordion bold">data-align=&quot;right&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-align="right">data-align</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-align=</span><span class="t-blue">"right"&gt;</span>data-align<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-align=&quot;center&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-align="center">data-align</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-align=</span><span class="t-blue">"center"&gt;</span>data-align<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-align=&quot;left&quot;</button>
+            <div class="panel">
+                <p></p>
+                <div class="sec" data-align="left">data-align</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-align=</span><span class="t-blue">"left"&gt;</span>data-align<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Element Background</h2>
+            <p data-scale="subtitle">The <strong>data-b</strong> attribute set background. This attribute is supported in any element</p>
+            <button class="accordion bold">data-b=&quot;12&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #121212</p>
+                <div class="sec white" data-b="12">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"12"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;11&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #111111</p>
+                <div class="sec white" data-b="11">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"11"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;10&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #101010</p>
+                <div class="sec white" data-b="10">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"10"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;0&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #000</p>
+                <div class="sec white" data-b="0">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"0"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;c1&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #c1c1c1</p>
+                <div class="sec" data-b="c1">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"c1"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;c&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #ccc</p>
+                <div class="sec" data-b="c1">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"c"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;c2&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #c2c2c2</p>
+                <div class="sec" data-b="c2">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"c2"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f1&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f1f1f1</p>
+                <div class="sec" data-b="f1">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f1"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f2&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f2f2f2</p>
+                <div class="sec" data-b="f2">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f2"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f3&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f3f3f3</p>
+                <div class="sec" data-b="f3">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f3"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f4&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f4f4f4</p>
+                <div class="sec" data-b="f4">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f4"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f5&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f5f5f5</p>
+                <div class="sec" data-b="f5">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f5"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f6&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f6f6f6</p>
+                <div class="sec" data-b="f6">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f6"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f7&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f7f7f7</p>
+                <div class="sec" data-b="f7">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f7"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f8&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f8f8f8</p>
+                <div class="sec" data-b="f8">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f8"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f9&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #f9f9f9</p>
+                <div class="sec" data-b="f9">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f1"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-b=&quot;f&quot;</button>
+            <div class="panel">
+                <p>The value of attribute will be repeated three times and set as CSS Background</p>
+                <p>CSS HEX Equivalent: #fff</p>
+                <div class="sec" data-b="f">data-b</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-b=</span><span class="t-blue">"f"&gt;</span>data-b<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Element Filter</h2>
+            <p data-scale="subtitle">The <strong>data-filter</strong> attribute set element's filter. This attribute is supported on any element</p>
+            <button class="accordion bold">data-filter=&quot;blur&quot;</button>
+            <div class="panel">
+                <p>Equivalent: [Value of Attribute]px. Ex: data-filter="blur 30" -> blur(30px)</p>
+                <p>Starting at 10</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"10 blur"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <div data-filter="10 blur" class="sec">data-filter</div>
+                <p>Ending at 650</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"650 blur"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">data-filter=&quot;grey&quot;</button>
+            <div class="panel">
+                <p>Equivalent: [Value of Attribute]px. Ex: data-filter="grey 30" -> grayscale(30%)</p>
+                <p>Starting at 1</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"1 grey"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <p><img data-filter="1 grey" src="https://cdn.pixabay.com/photo/2020/11/02/13/15/reindeer-5706627_960_720.png" height="70" width="70"></p>
+                <p>Ending at 100</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"100 grey"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <p><img data-filter="100 grey" src="https://cdn.pixabay.com/photo/2020/11/02/13/15/reindeer-5706627_960_720.png" height="70" width="70"></p>
+            </div>
+            <button class="accordion bold">data-filter=&quot;bright&quot;</button>
+            <div class="panel">
+                <p>Equivalent: [Value of Attribute]px. Ex: data-filter="bright 30" -> brightness(30%)</p>
+                <p>Starting at 1</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"1 bright"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <p><img data-filter="1 bright" src="https://cdn.pixabay.com/photo/2020/11/02/13/15/reindeer-5706627_960_720.png" height="70" width="70"></p>
+                <p>Ending at 200</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"200 bright"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <p><img data-filter="200 bright" src="https://cdn.pixabay.com/photo/2020/11/02/13/15/reindeer-5706627_960_720.png" height="70" width="70"></p>
+            </div>
+            <button class="accordion bold">data-filter=&quot;contrast&quot;</button>
+            <div class="panel">
+                <p>Equivalent: [Value of Attribute]px. Ex: data-filter="bright 30" -> contrast(30%)</p>
+                <p>Starting at 1</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"1 contrast"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <p><img data-filter="1 contrast" src="https://cdn.pixabay.com/photo/2020/11/02/13/15/reindeer-5706627_960_720.png" height="70" width="70"></p>
+                <p>Ending at 200</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-filter=</span><span class="t-blue">"200 contrast"&gt;</span>data-filter<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <p><img data-filter="200 contrast" src="https://cdn.pixabay.com/photo/2020/11/02/13/15/reindeer-5706627_960_720.png" height="70" width="70"></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Elements with rounded borders</h2>
+            <p data-scale="subtitle">The <strong>data-radius</strong> attribute set element's border radius. This attribute is supported on any element</p>
+            <button class="accordion bold">data-radius</button>
+            <div class="panel">
+                <p>Equivalent: [Value of Attribute]px. Ex: data-radius="30" -> border-radius: 30px</p>
+                <p>Starting at 1</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-radius=</span><span class="t-blue">"1"&gt;</span>data-radius<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <div data-radius="1" class="white blue sec">data-radius</div>
+                <p>Ending at 75</p>
+                <div data-radius="75" class="white blue sec">data-radius</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-radius=</span><span class="t-blue">"75"&gt;</span>data-radius<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr /></div>
+            <h2>Element padding</h2>
+            <p data-scale="subtitle">The <strong>data-pad</strong> attribute set element's padding. This attribute is supported on any element</p>
+            <button class="accordion bold">data-pad</button>
+            <div class="panel">
+                <p>Equivalent: [Value of Attribute]px. Ex: data-pad="30" -> padding: 30px</p>
+                <p>Starting at 1</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-pad=</span><span class="t-blue">"1"&gt;</span>data-pad<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+                <div data-pad="1" class="white blue sec">data-pad</div>
+                <p>Ending at 100</p>
+                <div data-pad="100" class="white blue sec">data-pad</div>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div data-pad=</span><span class="t-blue">"100"&gt;</span>data-pad<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <p class="n-sel"><br /></p>
+            <table class="complete">
+                <tr>
+                    <td class="mid t-left">
+                        <i class="fas fa-angle-left t-blue"></i><a class="right-min noUnderline" href="../vars/">Variables & Colors</a>
+                    </td>
+                    <td class="mid t-right">
+                        <a class="noUnderline" href="../sec/">Sections & Containers</a><i class="right-min fas fa-angle-right t-blue"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+       <footer class="sec white" data-b="12">
+            <p><img src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" class="logo"></p>
+            <p class="desc">CSSWizzard is a CSS Library to make responsive & beautiful designs</p>
+       </footer>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+       <script src="../../src/js/min.js"></script>
+       <script>
+           const hideorshowoverflow = () => {
+                if (document.body.getAttribute("data-scroll")) {
+                    document.body.removeAttribute("data-scroll");
+                } else {
+                    document.body.setAttribute("data-scroll", "no");
+                }
+           };
+       </script>
+    </body>
+</html>

@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Documentation - Forms | CSSWizzard</title>
-      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
-      <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
-      <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
-      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/all.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-   </head>
-   <body>
-      <div data-b="12" class="noDisplay allHeight sec fixed white" id="mobNav">
-         <div class="allHeight complete relative" id="navMainMobile">
-            <h2 id="closeNav" class="pointer fas fa-times white"></h2>
-            <div class="center t-center">
-               <p><a class="white noAnimDefault" href="https://csswizzard.cf/">Home</a></p>
-               <p><a class="white noAnimDefault bold">Documentation</a></p>
+    <head>
+        <title>Containers | CSSWizzard 1.2 Documentation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../src/css/min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png">
+        <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    </head>
+    <body>
+        <header class="sec">
+            <p><img class="logo" src="https://csswizzard.cf/etc/logo.png"></p>
+        </header>
+        <div class="container">
+            <h1>Forms</h1>
+            <form autocomplete="off" onsubmit="return false">
+                <input class="boxCont" placeholder="Enter your name" />
+                <button class="btn-blue">Send</button>
+            </form>
+            <p><b>Before 1.2:</b></p>
+            <form onsubmit="return false" autocomplete="off">
+                <input class="boxCont-old" placeholder="Enter your name" />
+                <button class="btn-blue">Send</button>
+            </form>
+            <p class="n-sel"><br/></p>
+            <p data-scale="subtitle" class="bold">BoxCont</p>
+            <p>BoxCont is a HTML class for textareas, inputs and selects</p>
+            <p><textarea class="boxCont">Textarea</textarea></p>
+            <p><input class="boxCont" placeholder="Input" /></p>
+            <p><select class="boxCont"><option>Select</option></select></p>
+            <p class="n-sel"><br /></p>
+            <p><b>BoxCont before 1.2</b></p>
+            <p>Use the <strong>boxCont-old</strong> class</p>
+            <p><textarea class="boxCont-old">Textarea</textarea></p>
+            <p><input class="boxCont-old" placeholder="Input" /></p>
+            <p><select class="boxCont-old"><option>Select</option></select></p>
+            <p class="n-sel"><br /></p>
+            <h2>Range inputs</h2>
+            <p><input type="range" /></p>
+            <div class="sec" data-b="f6">
+                <span class="t-blue">&lt;</span><span class="t-red">input type=</span><span class="t-blue">&quot;range&quot; /&gt;</span>
             </div>
-         </div>
-      </div>
-      <header class="sec">
-         <table class="complete">
-            <tr>
-               <th scope="col" class="mid t-left">
-                  <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
-               </th>
-               <td class="mid t-right">
-                  <nav>
-                     <a class="navLink t-grey noAnimDefault" href="https://csswizzard.cf/">Home</a>
-                     <a class="navLink t-grey noAnimDefault bold">Documentation</a>
-                     <a class="fas fa-bars noAnimDefault" id="openNav"></a>
-                  </nav>
-               </td>
-            </tr>
-         </table>
-      </header>
-      <div class="container">
-         <h1>Forms</h1>
-         <form onsubmit="return false">
-            <p>
-                <input placeholder="Enter your name" required />
-                <button class="btn-blue">Submit</button>
-            </p>
-        </form>
-         <div class="sec" data-b="f6">
-            <span class="t-blue">&#x3C;</span><span class="t-red">form</span><span class="t-blue">&#x3E;</span><br/>
-            <span class="right"><span class="t-blue">&#x3C;</span><span class="t-red">input required placeholder=</span><span class="t-blue">&quot;Enter your name&quot; /&#x3E;</span><br/></span>
-            <span class="right"><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-blue&quot;</span><span class="t-blue">&#x3E;</span>Submit<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span><br /></span>
-            <span class="t-blue">&#x3C;/</span><span class="t-red">form</span><span class="t-blue">&#x3E;</span>
-         </div>
-         <p class="n-sel"><br/></p>
-         <p data-scale="title">BoxCont</p>
-         <p><input placeholder="Enter your name" class="boxCont" /></p>
-         <p>The boxCont class adds styles to input, textarea and select tags</p>
-         <p><b>Before</b></p>
-         <p><input placeholder="Enter your name" /></p>
-         <p><b>After</b></p>
-         <p><input placeholder="Enter your name" class="boxCont" /></p>
-         <select class="boxCont">
-             <option>The boxCont class also works in select</option>
-         </select>
-         <p><textarea class="boxCont" data-scale="middle" data-resize="no">And in textareas!</textarea></p>
-         <p class="n-sel"><br/></p>
-         <p data-scale="title">Disabled inputs</p>
-         <p><input disabled placeholder="Enter your name" class="boxCont" /></p>
-         <div class="sec" data-b="f6">
-            <span class="right"><span class="t-blue">&#x3C;</span><span class="t-red">input disabled placeholder=</span><span class="t-blue">&quot;Enter your name&quot; /&#x3E;</span><br/></span>
-         </div>
-         <p><input readonly placeholder="Enter your name" class="boxCont" /></p>
-         <div class="sec" data-b="f6">
-            <span class="right"><span class="t-blue">&#x3C;</span><span class="t-red">input readonly placeholder=</span><span class="t-blue">&quot;Enter your name&quot; /&#x3E;</span><br/></span>
-         </div>
-         <p class="n-sel"><br/></p>
-         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/table"><i class="fas fa-angle-right"></i><span class="right">Next: Tables</span></a> </p>
-         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/button"><i class="fas fa-angle-left"></i><span class="right">Previous: Buttons</span></a> </p>
-      </div>
-      <footer class="sec">
-         <p><img class="logo cstm-img" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /><span class="inline right bold">CSSWizzard</span></p>
-         <p id="year"></p>
-         <p>Beautiful template design, CSS Library for modern website design.</p>
-      </footer>
-      <script>
-         year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123.";
-         closeNav.addEventListener("click", () => {
-              navMainMobile.style.opacity = "0";
-              setTimeout(() => {
-                  mobNav.style.width = "1%"
-                  setTimeout(() => {
-                      mobNav.style.opacity = "0"
-                  }, 300);
-              }, 300);
-         });
-         openNav.addEventListener("click", () => {
-          mobNav.style.display = "block";
-          mobNav.style.opacity = "1";
-              setTimeout(() => {
-                  navMainMobile.style.opacity = "1";
-                  setTimeout(() => {
-                      mobNav.style.width = "100%"
-                  }, 300);
-              }, 20);
-         });
-      </script>
-   </body>
+            <p><input type="range" disabled /></p>
+            <div class="sec" data-b="f6">
+                <span class="t-blue">&lt;</span><span class="t-red">input disabled type=</span><span class="t-blue">&quot;range&quot; /&gt;</span>
+            </div>
+            <p class="n-sel"><br /></p>
+            <h2>Disabled and readOnly inputs</h2>
+            <p><input class="boxCont" readonly /></p>
+            <p><input class="boxCont" disabled /></p>
+            <div class="sec" data-b="f6">
+                <span class="t-blue">&lt;</span><span class="t-red">input disabled class=</span><span class="t-blue">&quot;boxCont&quot; /&gt;</span><br/>
+                <span class="t-blue">&lt;</span><span class="t-red">input readonly class=</span><span class="t-blue">&quot;boxCont&quot; /&gt;</span><br/>
+            </div>
+            <p class="n-sel"><br /></p>
+            <h2>Buttons</h2>
+                <p><button class="btn-blue">.btn-blue</button></p>
+                <p><button class="btn-green">.btn-green</button></p>
+                <p><button class="btn-red">.btn-red</button></p>
+                <p><button class="btn-orange">.btn-orange</button></p>
+                <p><button class="btn-purple">.btn-purple</button></p>
+                <p><button class="btn-grey">.btn-grey</button></p>
+                <p><button class="btn-transparent">.btn-transparent</button></p>
+                <p><button class="btn-white">.btn-white</button></p>
+                <p><button class="btn-pink">.btn-pink</button></p>
+                <div class="sec" data-b="f6">
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-red&quot;</span><span class="t-blue">&#x3E;</span>.btn-red<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-blue&quot;</span><span class="t-blue">&#x3E;</span>.btn-blue<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-green&quot;</span><span class="t-blue">&#x3E;</span>.btn-green<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-orange&quot;</span><span class="t-blue">&#x3E;</span>.btn-orange<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-purple&quot;</span><span class="t-blue">&#x3E;</span>.btn-purple<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-grey&quot;</span><span class="t-blue">&#x3E;</span>.btn-grey<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-transparent&quot;</span><span class="t-blue">&#x3E;</span>.btn-transparent<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-white&quot;</span><span class="t-blue">&#x3E;</span>.btn-white<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-pink&quot;</span><span class="t-blue">&#x3E;</span>.btn-pink<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+            </div>
+            <p class="subtitle">With The .btn class, you can make buttons with other elements</p>
+            <p><a class="noUnderline btn btn-orange">Orange Button with link</a></p>
+            <div class="sec" data-b="f6">
+            <p><span class="t-blue">&#x3C;</span><span class="t-red">a class=</span><span class="t-blue">&quot;noUnderline <b>btn</b> btn-orange&quot;</span><span class="t-blue">&#x3E;</span>Orange Button with link<span class="t-blue">&#x3C;/</span><span class="t-red">a</span><span class="t-blue">&#x3E;</span></p>
+            </div>
+            <p><strong>NOTE: The .btn class is NOT necessary with the input, button & select tags</strong></p>
+            <p class="n-sel"><br /></p>
+            <p><button class="btn-blue-border">.btn-blue-border</button></p>
+            <p><button class="btn-green-border">.btn-green-border</button></p>
+            <p><button class="btn-red-border">.btn-red-border</button></p>
+            <p><button class="btn-orange-border">.btn-orange-border</button></p>
+            <p><button class="btn-purple-border">.btn-purple-border</button></p>
+            <p><button class="btn-grey-border">.btn-grey-border</button></p>
+            <p><button class="btn-pink-border">.btn-pink-border</button></p>
+            <div class="sec" data-b="f6">
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-red-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-red-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-blue-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-blue-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-green-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-green-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-orange-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-orange-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-purple-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-purple-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-grey-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-grey-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-pink-border&quot;</span><span class="t-blue">&#x3E;</span>.btn-pink-border<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+            </div>
+            <p><button class="btn-blue btn-large">Large button</button></p>
+            <p><button class="btn-blue btn-small">Small button</button></p>
+            <p><button class="btn-blue">Default button</button></p>
+            <div class="sec" data-b="f6">
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-blue <b>btn-large</b>&quot;</span><span class="t-blue">&#x3E;</span>Large button<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-blue <b>btn-small</b>&quot;</span><span class="t-blue">&#x3E;</span>Small Button<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+                <p><span class="t-blue">&#x3C;</span><span class="t-red">button class=</span><span class="t-blue">&quot;btn-blue&quot;</span><span class="t-blue">&#x3E;</span>Default button<span class="t-blue">&#x3C;/</span><span class="t-red">button</span><span class="t-blue">&#x3E;</span></p>
+            </div>
+            <p class="n-sel"><br /></p>
+            <table class="complete">
+                <tr>
+                    <td class="mid t-left">
+                        <i class="fas fa-angle-left t-blue"></i><a class="right-min noUnderline" href="../sec/">Sections & Containers</a>
+                    </td>
+                    <td class="mid t-right">
+                        <a class="noUnderline" href="../dropdown/">Dropdown Menus</a><i class="right-min fas fa-angle-right t-blue"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer class="sec" data-b="12">
+            <p><img class="logo" src="https://csswizzard.cf/etc/logo.png"></p>
+            <p class="desc">CSSWizzard is a CSS Library to make responsive & beautiful designs</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+       <script src="../../src/js/min.js"></script>
+    </body>
 </html>

@@ -1,108 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Documentation - Position & Display | CSSWizzard</title>
-      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/code/min.css" />
-      <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
-      <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png" />
-      <link rel="stylesheet" type="text/css" href="https://csswizzard.cf/all.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-   </head>
-   <body data-scrollH="no">
-      <div data-b="12" class="noDisplay allHeight sec fixed white" id="mobNav">
-         <div class="allHeight complete relative" id="navMainMobile">
-            <h2 id="closeNav" class="pointer fas fa-times white"></h2>
-            <div class="center t-center">
-               <p><a class="white noAnimDefault" href="https://csswizzard.cf/">Home</a></p>
-               <p><a class="white noAnimDefault bold">Documentation</a></p>
+    <head>
+        <title>Positions | CSSWizzard 1.2 Documentation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../src/css/min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png">
+        <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    </head>
+    <body>
+        <header class="sec">
+            <p><img class="logo" src="https://csswizzard.cf/etc/logo.png"></p>
+        </header>
+        <div class="container">
+            <h1>Positions</h1>
+            <p data-scale="subtitle">The following HTML Classes define CSS Positions</p>
+            <button class="accordion bold">.fixed</button>
+            <div class="panel">
+                <p>Set fixed position of element</p>
+                <p>CSS Equivalent => position: fixed;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;fixed&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
             </div>
-         </div>
-      </div>
-      <header class="sec">
-         <table class="complete">
-            <tr>
-               <th scope="col" class="mid t-left">
-                  <a href="https://csswizzard.cf/"><img class="logo" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /></a>
-               </th>
-               <td class="mid t-right">
-                  <nav>
-                     <a class="navLink t-grey noAnimDefault" href="https://csswizzard.cf/">Home</a>
-                     <a class="navLink t-grey noAnimDefault bold">Documentation</a>
-                     <a class="fas fa-bars noAnimDefault" id="openNav"></a>
-                  </nav>
-               </td>
-            </tr>
-         </table>
-      </header>
-      <div class="container">
-         <h1>Position</h1>
-        <p>The following HTML Classes defines CSS Position of element</p>
-        <ul>
-            <li>
-                <p><b>relative</b></p>
-            </li>
-            <li>
-                <p><b>absolute</b></p>
-            </li>
-            <li>
-               <p><b>fixed</b></p>
-           </li>
-           <li style="color: grey;">
-            <p>sticky (DEPRECATED)</p>
-        </li>
-        </ul>
-         <p class="n-sel"><br/></p>
-         <p data-scale="title">Display</p>
-         <p>The following HTML Classes defines CSS Display of element</p>
-        <ul>
-            <li>
-                <p><b>inline</b></p>
-            </li>
-            <li>
-                <p><b>flexbox</b> (500px Height, Align items center)</p>
-            </li>
-            <li>
-                <p><b>noDisplay</b> (Display: none)</p>
-            </li>
-            <li>
-                <p><b>notShownOnMobile</b> (Shown only on computers)</p>
-            </li>
-            <li>
-                <p><b>block</b></p>
-            </li>
-        </ul>
-         <p class="n-sel"><br/></p>
-         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/bkg"><i class="fas fa-angle-right"></i><span class="right">Next: Background Colors</span></a> </p>
-         <p><a class="t-right noUnderline" href="https://csswizzard.cf/docs/vert-al"><i class="fas fa-angle-left"></i><span class="right">Previous: Vertical align & Box Sizing: Width, Height</span></a> </p>
-      </div>
-      <footer class="sec">
-         <p><img class="logo cstm-img" src="https://csswizzard.cf/etc/logo.png" alt="CSS Library" /><span class="inline right bold">CSSWizzard</span></p>
-         <p id="year"></p>
-         <p>Beautiful template design, CSS Library for modern website design.</p>
-      </footer>
-      <script>
-         year.innerHTML = "&copy; 2019-"+new Date().getFullYear()+" Coding123.";
-         closeNav.addEventListener("click", () => {
-              navMainMobile.style.opacity = "0";
-              setTimeout(() => {
-                  mobNav.style.width = "1%"
-                  setTimeout(() => {
-                      mobNav.style.opacity = "0"
-                  }, 300);
-              }, 300);
-         });
-         openNav.addEventListener("click", () => {
-          mobNav.style.display = "block";
-          mobNav.style.opacity = "1";
-              setTimeout(() => {
-                  navMainMobile.style.opacity = "1";
-                  setTimeout(() => {
-                      mobNav.style.width = "100%"
-                  }, 300);
-              }, 20);
-         });
-      </script>
-   </body>
+            <button class="accordion bold">.absolute</button>
+            <div class="panel">
+                <p>Set absolute position of element</p>
+                <p>CSS Equivalent => position: absolute;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;absolute&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">.relative</button>
+            <div class="panel">
+                <p>Set relative position of element</p>
+                <p>CSS Equivalent => position: relative;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;relative&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <div class="sec"><hr></div>
+            <h2>Display</h2>
+            <p data-scale="subtitle">The following HTML Classes define CSS Display</p>
+            <button class="accordion bold">.inline</button>
+            <div class="panel">
+                <p>Set inline display of element</p>
+                <p>CSS Equivalent => display: inline;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;inline&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">.flex</button>
+            <div class="panel">
+                <p>Defines a flex element</p>
+                <p>CSS Equivalent => display: flex;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;flex&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">.noDisplay</button>
+            <div class="panel">
+                <p>Hides an element</p>
+                <p>CSS Equivalent => display: none;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;noDisplay&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">.notShownOnMobile</button>
+            <div class="panel">
+                <p>Hides an element in mobile devices</p>
+                <p>CSS Equivalent</p>
+                <p><span class="t-purple">@</span><span class="t-blue">media screen and(</span><span class="t-purple">max-width:</span><span class="t-red">980px</span><span class="t-blue">)</span><span class="t-orange"> {</span></p>
+                <p class="right"><span class="t-red">.notShownOnMobile</span><span class="t-orange"> {</span></p>
+                <p class="right"><span class="right"><span class="t-orange">display</span><span class="t-red">:</span><span class="t-blue">none</span><span class="t-red">;</span></span></p>
+                <p class="right"><span class="t-orange">}</span></p>
+                <p><span class="t-orange">}</span></p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;notShownOnMobile&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <button class="accordion bold">.block</button>
+            <div class="panel">
+                <p>Show an element</p>
+                <p>CSS Equivalent => display: block;</p>
+                <p><span class="t-blue">&lt;</span><span class="t-red">div class=</span><span class="t-blue">&quot;block&quot;&gt;</span>Fixed<span class="t-blue">&lt;/</span><span class="t-red">div</span><span class="t-blue">&gt;</span></p>
+            </div>
+            <p class="n-sel"><br/></p>
+            <table class="complete">
+                <tr>
+                    <td class="mid t-left">
+                        <i class="fas fa-angle-left t-blue"></i><a class="right-min noUnderline" href="../card/">Cards</a>
+                    </td>
+                    <td class="mid t-right">
+                        <a class="noUnderline" href="../bars/">Progress Bars</a><i class="right-min fas fa-angle-right t-blue"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer class="sec" data-b="12">
+            <p><img class="logo" src="https://csswizzard.cf/etc/logo.png"></p>
+            <p class="desc">CSSWizzard is a CSS Library to make responsive & beautiful designs</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="../../src/js/min.js"></script>
+    </body>
 </html>

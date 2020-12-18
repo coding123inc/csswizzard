@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Vertical Layout | CSSWizzard 1.2 Documentation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../../src/css/min.css" rel="stylesheet">
+        <link rel="icon" type="image/png" href="https://csswizzard.cf/etc/logo.png">
+        <link rel="shortcut icon" type="image/png" href="https://csswizzard.cf/etc/logo.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    </head>
+    <body>
+        <header class="sec">
+            <p><img class="logo" src="https://csswizzard.cf/etc/logo.png"></p>
+        </header>
+        <div class="container">
+            <h1>Align items in vertival center</h1>
+            <p data-scale="subtitle">Use the <strong>center</strong> class to align items vertically</p>
+            <div class="h500 relative white" data-b="12" data-radius="8">
+                <div class="center">
+                    <h3>Items aligned vertivally</h3>
+                </div>
+            </div>
+            <p><button class="btn-orange" id="copyCenter">Copy source code</button></p>
+            <h2>Align items vertically inside blocks</h2>
+            <p data-scale="subtitle">To align items vertically with the center class, add the <strong>relative</strong> class in the parent container</p>
+            <div class="sec"><hr></div>
+            <h2>Box sizing</h2>
+            <p data-scale="subtitle" class="bold">Width Control</p>
+            <div class="wAuto white" data-b="12">.wAuto (Automatic width)</div>
+            <div class="wAuto white" data-b="12">.complete (100% Width)</div>
+            <div class="w95 white" data-b="12">.w95 (95% Width)</div>
+            <div class="w75 white" data-b="12">.w75 (75% Width)</div>
+            <div class="w65 white" data-b="12">.w65 (65% Width)</div>
+            <div class="mid white" data-b="12">.mid (50% Width)</div>
+            <p>Other:</p>
+            <ul>
+                <li>
+                    <p>.w800 (800px Width)</p>
+                </li>
+                <li>
+                    <p>.w700 (800px Width)</p>
+                </li>
+                <li>
+                    <p>.w600 (600px Width)</p>
+                </li>
+                <li>
+                    <p>.w500 (500px Width)</p>
+                </li>
+            </ul>
+            <p class="n-sel"><br /></p>
+            <p data-scale="subtitle" class="bold">Height Control</p>
+            <ul>
+                <li>
+                    <p>.allHeight (100% Height)</p>
+                </li>
+                <li>
+                    <p>.h500 (500px Height)</p>
+                </li>
+                <li>
+                    <p>.h600 (600px Height)</p>
+                </li>
+                <li>
+                    <p>.h700 (700px Height)</p>
+                </li>
+                <li>
+                    <p>.h800 (800px Height)</p>
+                </li>
+            </ul>
+            <div class="sec"><hr></div>
+            <h2>Inline layout</h2>
+           <p>This <span class="inline t-red" data-b="f6" data-pad="7">text</span> is <span class="inline t-red" data-b="f6" data-pad="7">inline aligned</span></p>
+           <div class="sec" data-b="f6">
+               <p><span class="t-blue">&#x3C;</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span>This <span class="t-blue">&#x3C;</span><span class="t-red">span class=</span><span class="t-blue">&quot;inline&quot;</span><span class="t-blue">&#x3E;</span>text<span class="t-blue">&#x3C;/</span><span class="t-red">span</span><span class="t-blue">&#x3E;</span> is <span class="t-blue">&#x3C;</span><span class="t-red">span class=</span><span class="t-blue">&quot;inline&quot;</span><span class="t-blue">&#x3E;</span>inline aligned<span class="t-blue">&#x3C;/</span><span class="t-red">span</span><span class="t-blue">&#x3E;</span><span class="t-blue">&#x3C;/</span><span class="t-red">p</span><span class="t-blue">&#x3E;</span></p>
+            </div>
+            <p class="n-sel"><br /></p>
+            <table class="complete">
+                <tr>
+                    <td class="mid t-left">
+                        <i class="fas fa-angle-left t-blue"></i><a class="right-min noUnderline" href="../dropdown/">Dropdown Menus</a>
+                    </td>
+                    <td class="mid t-right">
+                        <a class="noUnderline" href="../card/">Cards</a><i class="right-min fas fa-angle-right t-blue"></i>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer class="sec" data-b="12">
+            <p><img class="logo" src="https://csswizzard.cf/etc/logo.png"></p>
+            <p class="desc">CSSWizzard is a CSS Library to make responsive & beautiful designs</p>
+        </footer>
+        <script>
+            copyCenter.addEventListener("click", () => {
+                copyCenter.innerHTML = "Copied!";
+                el = document.createElement("textarea"); document.body.appendChild(el); el.value = `<div class="h500 relative white" data-b="12" data-radius="8">
+                <div class="center">
+                    <h3>Items aligned vertivally</h3>
+                </div>
+            </div>`; el.select(); document.execCommand("copy"); el.parentNode.removeChild(el);
+                setTimeout(() => {
+                    copyCenter.innerHTML = "Copy source code";                    
+                }, 600);
+            });
+        </script>
+    </body>
+</html>

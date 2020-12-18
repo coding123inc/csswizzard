@@ -56,8 +56,4 @@ Without the CSSWizzard JS, The following features will not work:
 * Accordion Menus
 
 Official website:
-https://csswizzard.cf/code/min.js
-
-## GitHub repo
-
-View it [here](https://github.com/coding123inc/csswizzard/)
+https://csswizzard.cf/

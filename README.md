@@ -4,7 +4,8 @@ CSSWizzard is a CSS Library to make responsive designs
 
 ## Documentation
 
-Find the official documentation (here)[https://csswizzard.cf/docs]
+Find the official documentation [here](https://csswizzard.cf/docs)
+
 
 Include CSSWizzard:
 

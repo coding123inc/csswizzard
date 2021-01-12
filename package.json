@@ -1,0 +1,28 @@
+{
+  "name": "csswizz",
+  "version": "1.4.0",
+  "description": "With CSSWizzard you can create responsive web designs in short time",
+  "main": "src/main.min.css",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding123inc/csswizzard.git"
+  },
+  "keywords": [
+    "CSS",
+    "Library",
+    "Responsive",
+    "Layout"
+  ],
+  "author": "Coding123",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coding123inc/csswizzard/issues"
+  },
+  "homepage": "https://github.com/coding123inc/csswizzard#readme"
+}

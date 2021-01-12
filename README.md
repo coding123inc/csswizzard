@@ -1,29 +1,29 @@
 # Welcome
 
-CSSWizzard is a CSS Library to make responsive designs
+CSSWizzard is a CSS Library to make responsive, fast & beautiful designs
 
-## Documentation
+Official Page: [Click here](https://csswizzard.cf/)
 
-Find the official documentation [here](https://csswizzard.cf/docs)
+## Getting started
 
-
-Include CSSWizzard:
+Link CSSWizzard to your website
 
 ```
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://csswizzard.cf/code/min.css" />
-    <!-- JS -->
-   <script src="https://csswizzard.cf/code/min.js"></script>
+<link rel="stylesheet" href="https://csswizzard.cf/code/min.css">
 ```
+
+```
+<script src="https://csswizzard.cf/code/min.js"></script>
+```
+
+Read the full documentation [here](https://csswizzard.cf/docs)
 
 ## Release notes
 
-* jQuery has been deleted as a dependence
+* Size of package has been optimized
+* Added modals
+* Restyled buttons
 
-## Repo on GitHub
+## Contributing
 
-Click [here](https://github.com/coding123inc/csswizzard)
-
-## Official website
-
-Click [here](https://csswizzard.cf/)
+We appreciate suggestions for this library, please read [this article](https://coding123.gq/libs)

@@ -112,6 +112,11 @@ window.addEventListener("load",() => {
 });
 
 window.addEventListener("load",() => {
+  document.addEventListener('DOMNodeInserted', e => {
+      if (e.target.tagName.toLowerCase() == "button" || e.target.tagName.toLowerCase() == "a") {
+        e.target.innerHTML = "<span>"+e.target.innerHTML+"</span>"
+      }
+  });
   window.addEventListener("scroll", () => {
     let windowBottom = window.pageYOffset + window.innerHeight;
     document.querySelectorAll(".fade-right").forEach(el => {
@@ -126,4 +131,40 @@ window.addEventListener("load",() => {
       }
     });
   })
+});
+
+document.querySelectorAll("button, .btn").forEach(el => {
+    el.innerHTML = "<span>"+el.innerHTML+"</span>"
+});
+
+const openModal = () => {
+    document.querySelectorAll(".modal").forEach(el => {
+        document.querySelector(".mask").style.display = "block";
+        setTimeout(() => {
+          el.style.transform = "scale(1,1)";
+          el.style["webkit-trasform"] = "scale(1,1)";
+          el.style["moz-trasform"] = "scale(1,1)";
+          el.style["o-trasform"] = "scale(1,1)";
+        }, 20);
+    });
+};
+
+const closeModal = () => {
+    document.querySelectorAll(".modal").forEach(el => {
+        el.style.transform = "scale(1,0)";
+        el.style["webkit-trasform"] = "scale(1,0)";
+        el.style["moz-trasform"] = "scale(1,0)";
+        el.style["o-trasform"] = "scale(1,0)";
+        setTimeout(() => {
+            document.querySelector(".mask").style.display = "none";
+            el.removeAttribute("style");
+            document.querySelector(".mask").removeAttribute("style");
+        }, 300);
+    });
+};
+
+document.querySelectorAll(".btn-close").forEach(el => {
+    el.addEventListener("click", () => {
+        closeModal();
+    });
 });
